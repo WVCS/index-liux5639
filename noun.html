@@ -10,6 +10,7 @@
   <nav>
     <li class="nav"><a href ="index.html">Home</a></li>
     <li class="nav"><a href = "noun.html"> Noun </a></li>
+    <li class="nav"><a href = "LINK"> More Info </a></li>
   </nav>
   <br>
   <br>
@@ -17,6 +18,31 @@
   <h1>
     Impressionism
   </h1>
+      <table> 
+    <tr>
+      <th>Impressionist Techniques</th>
+      <th>Works</th>
+    </tr>
+    <tr>
+      <td>Painting the impression of weather/daylight/seasons</td>
+      <td>The Card Players, Cezzane<br>Boulevard Montmatre, Pissaro<br>Water Lilies, Monet<br>Haystacks, Monet</td>
+    </tr>
+    <tr>
+      <td>Broken Color Technique (no blending)</td>
+      <td>Picking Flowers, Renoir<br>Haystacks, Monet<br>Starry Night, Van Gogh</td>
+    </tr>
+    <tr>
+      <td>Wet-on-wet paint(loose&softer edges)</td>
+      <td>Woman with a Parasol, Monet</td>
+  </table>
+  
+  <ul>
+    <li class = "decor">bold strokes used to direct the viewer</li>
+    <li>broken color: illusion of depth and movement</li>
+    <li>relaxed drawing</li>
+    <li>contrast between warm and cool tones</li>
+  </ul>
+      
   <div class = "gallery">
   <img src = "https://media.nga.gov/iiif/99758d9d-c10b-4d02-a198-7e49afb1f3a6/full/!740,560/0/default.jpg" class="gallery">
     <div class = "text">Monet, Woman with a Parasol - Madame Monet and Her son</div>
@@ -39,21 +65,26 @@
   
   <div class = "gallery">
   <img src = "https://www.artyfactory.com/art_appreciation/art_movements/art-movements/impressionism/monet.jpg" class="gallery">
-  <
+    <div class = "text">Monet, Water Lilies and Japanese Bridge</div>
   </div>
-  
+
   <div class="org">
   <img src = https://cdn.britannica.com/34/3734-004-D66E6719/canvas-oil-Le-Moulin-de-la-Galette-1876.jpg class = "org">
     <div class = "text">Renoir, Dance et Le Moulin de la Galette</div>
   </div>
- 
-  <div>
-  <img src = "https://ychef.files.bbci.co.uk/976x549/p02lr4xh.jpg" class = "org">
+  
+  <div class="org2">
+  <img src = "https://ychef.files.bbci.co.uk/976x549/p02lr4xh.jpg" class = "org2">
+  <div class = "text">Renoir and Friends<div>
   </div>
-    </body>
+</body>
 </html>
 
   <style>
+body {
+  position: relative;
+}
+
 h1 {
   color: #765379;
   text-align: center;
@@ -71,7 +102,7 @@ body {
 }
 
 .gallery{
-  margin: 15px; 
+  margin: 13px; 
   float: left;
   border: 15px; 
   width: 345px;
@@ -79,43 +110,55 @@ body {
 }
 
 .text{
-  margin: 15px; 
+  margin: 5px; 
   float: left;
-  border: 15px; 
+  border: 0px; 
   width: 345px;
   height: 300px;
   opacity: 0;
+  text-align: center;
 }
 
 .gallery:hover .text{
-  font-size: 20px;
+  opacity: 1;
+  font-size: 20px; 
   color: #564256;
-  opacity: 1; 
 }
 
 .gallery:hover {
   opacity: 0.6;
 }
 
-.text{
-  font-size: 20px;
-  color: #CAD49D;
-  display: block;
-}
-
 .org {
-  margin: 15px;
+  margin: 13px;
   float: left;
+  padding-top: 20px;
 }
 
-.org:hover {
-  opacity: 0.45;
+.org:hover .text{
+  opacity: 1;
+  font-size: 20px; 
+  color: #564256;
+}
+
+.org:hover{
+  opacity: 0.6;
 }
 
 .org2 {
   width: 450px;
   height: 300px;
-  margin: 15px;
+  margin: 13px;
+}
+
+.org2:hover .text{
+  opacity: 1;
+  font-size: 20px; 
+  color: #564256;
+}
+
+.org2:hover {
+  opacity: 0.6;
 }
 
 nav {
@@ -139,8 +182,30 @@ a {
   color: #56A3A6;
   font-size: 120%;
 }
-    
+
 .nav:hover {
   background-color: #DDA3B2;
+}
+
+table, th, td{
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 50%;
+  border-color: #033F63;
+  padding: 10px;
+  margin: 13px;
+  color: #826251;
+}
+
+ul{
+  list-style-type: circle;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+ }
+
+.decor{
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: purple;
 }
  </style>
