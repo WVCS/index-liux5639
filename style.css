@@ -1,3 +1,29 @@
 body {
 
 }
+
+nav {
+  list-style-type: none; 
+  position: fixed;
+  background-color: #564256;
+  width: 100%;
+  left: 0; 
+  top: 0; 
+}
+
+.nav {
+  display: inline; 
+  float: left; 
+  padding: 20px;
+  margin: 4x;
+}
+
+a {
+  text-decoration: none; 
+  color: #56A3A6;
+  font-size: 120%;
+}
+
+.nav:hover {
+  background-color: #DDA3B2;
+}
