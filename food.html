@@ -129,3 +129,119 @@
 </div>
   </body>
 </html>
+
+<style>
+  body {
+  margin: 40px;
+}
+
+  .wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, [col] 450px ) ;
+    grid-template-rows: repeat(2, [row] 1000px  );
+    background-color: #fff;
+    color: #444;
+  }
+
+  .box {
+    background-color: #E1C699;
+    color: #ffe4ce;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+  }
+
+  .box .box {
+    background-color: #fffdd0;
+    color: #E1C699;
+  }
+
+  .a {
+    grid-column: col / span 2;
+    grid-row: row;
+  }
+
+  .b {
+    grid-column: col 3 / span 2;
+    grid-row: row;
+  }
+
+  .c {
+    grid-column: col 1 / span 2;
+    /* 3 rows down & spans 2 cols */
+    grid-row: row 2;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .d{
+    grid-column: 1 / 2;
+    grid-row: 2;
+  }
+
+  .e {
+    grid-column: 2 / 2;
+    grid-row: 1;
+  }
+
+  .f {
+    grid-column: col 3 / span 2;
+    /* 3 rows down & spans 2 cols */
+    grid-row: row 2;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    font-size: 20px;
+  }
+
+  .g {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .h {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+/* grid area: row line, column line, row end, column end */
+
+.logo {
+  left: 120px; 
+}
+
+.img1 {
+  position: relative; 
+  left: 375px;
+  top: -890px; 
+}
+
+nav {
+  list-style-type: none; 
+  position: fixed; 
+  background-color: #564256;
+  width: 100%;
+  left: 0; 
+  top: 0; 
+  transition: top 0.3s;
+}
+
+.nav {
+  display: inline; 
+  float: left; 
+  padding: 20px;
+  margin: 4px;
+}
+
+a {
+  text-decoration: none; 
+  color: #56A3A6;
+  font-size: 120%;
+}
+
+.nav:hover {
+  background-color: #DDA3B2;
+}
+</style>
