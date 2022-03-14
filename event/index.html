@@ -1,5 +1,94 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
   <a href = "../index.html"> TEST TO HOME </a>
-  
-  FILE PLACEHOLDER
+</head>
+<body>
+  <div class="wrapper">
+  <div class="box a">A</div>
+  <div class="box b">B</div>
+  <div class="box c">C</div>
+  <div class="box d">D</div>
+</div>
+</body>
+<style>
+  body {
+  margin: 40px;
+}
+
+.wrapper {
+display: grid;
+grid-gap: 10px;
+grid-template-columns: 400px 430px 600px;
+background-color: #fff;
+color: #444;
+}
+
+.box {
+background-color: #444;
+color: #fff;
+border-radius: 5px;
+padding: 20px;
+font-size: 150%;
+
+}
+
+@media(min-width:1000px){
+.a {
+grid-column: 1 / span 2;
+}
+.b {
+grid-column: 3 ;
+grid-row: 1 / span 2;
+}
+.c {
+grid-column: 1 ;
+grid-row: 2 ;
+}
+.d {
+grid-column: 2 ;
+grid-row: 2 ;
+}
+}
+
+@media(max-width:768px){
+  .a {
+  grid-column: 1 / span 1;
+   }
+  .b {
+    grid-column: 2 ;
+    grid-row: 1 / span 2;
+  }
+   .c {
+    grid-column: 1 ;
+    grid-row: 2 ;
+  }
+   .d {
+    grid-column: 1 / span 2;
+    grid-row: 3 ;
+  }
+}
+
+@media(max-width:500px){
+  .a {
+  grid-column: 1 / span 1;
+   }
+  .b {
+    grid-column: 1 ;
+    grid-row: 2
+  }
+   .c {
+    grid-column: 1 ;
+    grid-row: 3 ;
+  }
+   .d {
+    grid-column: 1;
+    grid-row: 4 / span 2;
+  }
+}
+  </style>
 </html>
