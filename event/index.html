@@ -5,26 +5,64 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <a href = "../index.html"> TEST TO HOME </a>
+  <nav>
+  <li class="nav"><a href="../index.html">Home</a></li>
+  <li class="nav"><a href = "#a">Karaoke</a></li>
+  <li class="nav"><a href = "#b">Event Info</a></li>
+  <li class="nav"><a href = "#c"> Registrations </a></li>
+  <li class="nav"><a href = "#d"> Contact </a></li>
+  </nav>
 </head>
 <body>
-  <div class="wrapper">
-  <div class="box a">A</div>
-  <div class="box b">B</div>
-  <div class="box c">C</div>
-  <div class="box d">D</div>
+<br>
+  <br>
+  <div class="wrapper"> 
+  <div class="box a" id = "a">
+    <img src = "https://blogmedia.evbstatic.com/wp-content/uploads/wpmulti/sites/8/2018/10/24173941/cool-kids.jpg">
+  </div>
+  <div class="box b" id = "b">
+    <p>Come to our karaoke special! We have lots of genres to choose from and good food. For our special, we have multiple playlists with a halloween-themed song experience and a virtual reality and special effects room that would bring out the best <p2>spirit</p2> for you karoke session. Register below and contact us for more information! January 18th, 7-10 PM 
+    </p>
+  </div>
+  <div class="box c" id = "c">
+  Register!
+  <br>
+  <br>
+  <form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname"><br>
+  <label for="fname">Email Address:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Phone Number:</label><br>
+  <input type="text" id="lname" name="lname">
+    <button onclick="myFunction()">Submit</button>
+  <div id="myDIV">
+  Great! We'll follow up with you soon with     further info.
+    </div>
+  </form>
+  </div>
+  <div class="box d" id = "d">
+    <center>
+    <p>
+      Contact us at info@karokenightusa.com
+      Call toll free at 1-800-777-5331
+    </p>
+    </center>
+  </div>
 </div>
 </body>
 <style>
   body {
   margin: 40px;
+  background-image: url('https://static.vecteezy.com/ti/gratis-vector/p1/2315365-halloween-karaoke-microfoon-skelet-zombie-hand-vector.jpg');
 }
 
 .wrapper {
 display: grid;
 grid-gap: 10px;
 grid-template-columns: 400px 430px 600px;
-background-color: #fff;
 color: #444;
 }
 
@@ -37,7 +75,6 @@ font-size: 150%;
 
 }
 
-@media(min-width:1000px){
 .a {
 grid-column: 1 / span 2;
 }
@@ -53,9 +90,9 @@ grid-row: 2 ;
 grid-column: 2 ;
 grid-row: 2 ;
 }
-}
 
-@media(max-width:768px){
+
+@media(max-width:800px){
   .a {
   grid-column: 1 / span 1;
    }
@@ -90,5 +127,50 @@ grid-row: 2 ;
     grid-row: 4 / span 2;
   }
 }
+
+nav {
+  list-style-type: none; 
+  position: fixed; 
+  left: 0; 
+  top: 0; 
+  transition: top 0.3s;
+}
+
+.nav {
+  display: inline; 
+  float: left; 
+  padding: 20px;
+  margin: 4px;
+}
+
+a {
+  text-decoration: none; 
+  color: #56A3A6;
+  font-size: 120%;
+  font-family: Papyrus, fantasy;
+}
+
+.nav:hover {
+  background-color: #DDA3B2;
+}
+
+p{
+  color: #A45EE5;
+  margin: 20px;
+  font-size: 35px;
+}
+
+p2{
+  font-family: Papyrus, fantasy;
+}
   </style>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myDIV");
+      if button.onclick = function(){
+       x.style.display = "block";
+    } else {
+       x.style.display = "none";
+  }
+  </script>
 </html>
