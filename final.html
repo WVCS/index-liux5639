@@ -1,0 +1,125 @@
+<div class="container">
+  <div class="item">
+  <center>
+  <div class="w3-content" style="max-width:800px">
+  <img class="mySlides" src="https://www.nationnext.com/nationnext/images/private%20jet%20(claylacy).webp">
+  <img class="mySlides" src="https://media.architecturaldigest.com/photos/613f8e892c0d6dd5a880d998/master/pass/AD1021_RH_2.jpg">
+  <img class="mySlides" src="https://i.insider.com/5bc9e4dcf3227b2afa54a4cc?width=700">
+    </div>
+<br>
+<div class="w3-center">
+  <div class="w3-section">
+    <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
+    <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
+  </div>
+  <br>
+  <button class="w3-button demo" onclick="currentDiv(1)">1</button> 
+  <button class="w3-button demo" onclick="currentDiv(2)">2</button> 
+  <button class="w3-button demo" onclick="currentDiv(3)">3</button> 
+<br>
+</div>
+    </center>
+</div>
+  <div class="item">Hello!
+  Flights are open for request. Pricing Packages are $3000 for 3 hours and $4500 for 5 hours. Join our mailing list for more information!
+  <br>Address: 13500 Wolverine Way
+  <br>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSebqphgjSbSaCZEnXUAN4JXIxaiSh4oj5mdWq2iLshIxR68ow/viewform?embedded=true" width="640" height="407" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  </div>
+  <div class="item">Locations <br> <br>
+   <div class = "gallery">
+   <img src = "https://media.architecturaldigest.com/photos/56a29165883e5aaf0648d83e/4:3/w_768/LA-package.jpg"><br>LA
+    </div>
+    <div class = "gallery">
+    <img src = "https://static.amazon.jobs/locations/217/thumbnails/SB_2.jpg?1563572230"><br> Santa Barbara 
+    </div>
+    <div class = "gallery">
+    <img src = "https://cf.bstatic.com/xdata/images/hotel/max500/263858373.jpg?k=1818a9f40dbf631c2870111510af6d1eee39fd366d246da6a0b0875f1c87066a&o=&hp=1"><br>Las Vegas 
+    </div>
+  </div>
+  <div class="item"><i>"Flying High!"</i> - Ms. Neumann</div>
+  <div class="item">Meals/Food Options <br> Catering available. Champagne/wine served upon request. <img src = "https://imageio.forbes.com/blogs-images/douggollan/files/2015/07/Screen-Shot-2015-07-21-at-8.13.51-PM.jpg?fit=bounds&format=jpg&width=960"> <img src = "https://imageio.forbes.com/blogs-images/douggollan/files/2015/07/Screen-Shot-2015-07-21-at-8.15.22-PM.jpg?fit=bounds&format=jpg&width=960">
+  <br> Water, coffee, juice, cookies, and almonds are free of charge. An office for meetings, Hulu, Netflix, and wifi are also available free of charge.</div>
+  <div class="item">
+    <p>Flight Crew</p>
+    <div class = "gallery">
+    <img src = "https://www.powayusd.com/PUSD/media/WVHS/images/Staff/TinaZiegler.jpg"> <br> Tina Ziegler - Pilot
+    </div>
+    <div class = "gallery">
+     <img src = "https://www.powayusd.com/PUSD/media/WVHS/images/Staff/ShannonParker.jpg"> <br> Shannon Parker - First Office 
+    </div>
+    <div class = "gallery">
+      <img src = "https://www.powayusd.com/PUSD/media/WVHS/images/Staff/DarcelGlover.jpg"> <br> Darcel Glover - Flight Attendant
+    </div>
+    <div class = "gallery">
+     <img src = "https://www.powayusd.com/PUSD/media/WVHS/images/Staff/TeriHeard.jpg"> <br> Teri Heard - Flight Engineer
+    </div>
+    </div> 
+</div>
+
+<style>
+  .container {
+  display: grid;
+  grid-template-rows: auto;
+  background-color: #3e2723;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.item {
+  background-color: #80cbc4;
+  border: 1px solid #fff;
+  font-size: 30px;
+  text-align: center;
+  padding: 40px;
+}
+
+
+.mySlides {
+   width: 100%;
+}
+
+button {
+  background-color: #f28080;
+  color: white;
+  display: inline-block;
+  font-size: 16px;
+  padding: 10px 15px;
+  border: none;
+}
+
+.gallery {
+  float: left; 
+  margin: 15px;
+}
+
+@media(max-width:950px){.gallery{float:none;}}</style>
+
+<script>
+  var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-red";
+}
+</script>
