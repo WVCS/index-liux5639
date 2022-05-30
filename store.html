@@ -1,15 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
+<html>
 <body>
-  <div class = "align">
-    <button type = "button" name = "button" onclick="myFunction()"> Promotions!</button>
-
 <p>Search Bar:</p>
 
 
@@ -17,12 +7,18 @@
   <div class="autocomplete" style="width:300px;">
     <input id="myInput" type="text" name="myCountry" placeholder="Product">
   </div>
+</form>
+<br>
+<br>
+<button type = "button" name = "button" onclick="myFunction()"> Promotions!</button>
+  
     <header>
       <a href="#" alt="our company" class="logo">
       <img src="https://images.squarespace-cdn.com/content/v1/60a043ed01f42322224bc905/1621116538502-K2ZVI67RE8VHNA12Y3WW/logo.png" alt="Our Logo" class="logo-img">
         <h1 class="logo-text">Winnie's</h1>
       </a>
     </header>
+  
   <div class="wrapper">
     <div class = "item">One</div>
     <div class = "item">Two</div>
@@ -34,55 +30,7 @@
 </html>
   
 <style>
-   .logo {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-}
-
-.logo-img {
-  margin-right: 10px;
-  height: 60px;
-  transform: scaleX(-1);
-}
-
-.logo-text {
-  font-family: 'Lobster', cursive;
-  font-size: 2.6em;
-  color: #c3bab9;
-  text-shadow:
-   -1px -1px 0 #615655,  
-    1px -1px 0 #615655,
-    -1px 1px 0 #615655,
-     1px 1px 0 #615655;
-}
-
-body{
-  background-image: url('https://cdn.pixabay.com/photo/2017/08/22/12/48/pink-2668847_1280.jpg');
-}
-
-.wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10px;
-}
-
-.item {
-  background-color: pink;
-  color: #fff;
-  border-radius: 5px;
-  padding: 20px;
-  font-size: 150%;
-}
-
-button {
-   background-color: beige;
-   padding: 20px;
-   font-size: 28px;
-   font-family: Verdana, Sans Serif;
-}
-
-* {
+  * {
   box-sizing: border-box;
 }
 
@@ -144,8 +92,52 @@ input[type=submit] {
   color: #ffffff; 
 }
 
-.align {
-  float: left;
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo-img {
+  margin-right: 10px;
+  height: 60px;
+  transform: scaleX(-1);
+}
+
+.logo-text {
+  font-family: 'Lobster', cursive;
+  font-size: 2.6em;
+  color: #c3bab9;
+  text-shadow:
+   -1px -1px 0 #615655,  
+    1px -1px 0 #615655,
+    -1px 1px 0 #615655,
+     1px 1px 0 #615655;
+}
+
+body{
+  background-image: url('https://cdn.pixabay.com/photo/2017/08/22/12/48/pink-2668847_1280.jpg');
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.item {
+  background-color: pink;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+button {
+   background-color: beige;
+   padding: 20px;
+   font-size: 28px;
+   font-family: Verdana, Sans Serif;
 }
   </style>
   
@@ -245,17 +237,7 @@ input[type=submit] {
 var countries = ["Almond Royal", "Brittle", "Cashews", "Caffe Latte Krispys", "Chocolate Lollypops", "Fruit Medallions", "Jelly Beans", "Jelly Bird Eggs", "Sour Jelly Beans", "Toffee-etes"];
 autocomplete(document.getElementById("myInput"), countries);
 
-
-function myFunction(){
-  let text;
-  let person = prompt("Please enter your name:", "Harry Potter");
-  if (person == null || person == "") {
-    text = "User cancelled the prompt.";
-  } else {
-    text = "Hello " + person + "! How are you today?";
-  }
-  document.getElementById("demo").innerHTML = text;
+function myFunction() {
+    let person = prompt("Please enter your email:", "Harry Potter");
 }
-}
-
   </script>
