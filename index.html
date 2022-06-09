@@ -6,7 +6,7 @@
   </head>
   
   <body>
-  <nav> 
+  <nav class = "hover-underline-animation"> 
     <li class="nav"><a href ="index.html">Home</a></li>
     <li class="nav"><a href = "noun.html"> Noun </a></li>
     <li class="nav"><a href = "convince.html"> Convince Project </a></li>
@@ -60,5 +60,29 @@
     .nav:hover {
       background-color: #DDA3B2;
     }
+    
+    .hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #0087ca;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
 
   </style>
