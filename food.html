@@ -4,7 +4,6 @@
     </head>
   <body>
     <div class = "topnav" id = "myTopnav">
-    <nav>
     <li class = "active"><a href="index.html">Home</a></li>
     <li><a href = "#a"> Welcome </a></li>
     <li><a href = "#b"> Menu </a></li>
@@ -14,7 +13,6 @@
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
-  </nav>
     </div>
   <br>
   <br>
@@ -217,7 +215,7 @@
   white-space: nowrap;
 }
 
-nav {
+.topnav {
   list-style-type: none; 
   position: fixed; 
   background-color: #564256;
@@ -226,22 +224,23 @@ nav {
   top: 0; 
 }
 
-.topnav {
-  display: inline; 
+.topnav a {
+  text-decoration: none; 
+  color: #56A3A6;
+  font-size: 120%;
+  display: block; 
   float: left; 
   padding: 20px;
   margin: 4px;
 }
 
-.topnav a {
-  text-decoration: none; 
-  color: #56A3A6;
-  font-size: 120%;
-}
-
 .topnav a:hover {
   background-color: #DDA3B2;
 }
+  
+ .topnav .icon{
+   display: none; 
+  }
   
  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
